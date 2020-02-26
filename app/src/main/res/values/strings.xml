@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LoginDESIGN</string>
+    <string name="etName">Username</string>
+    <string name="etPassword">Password</string>
+    <string name="btnSignIn">Log in</string>
+    <string name="username_wrong">Wrong username</string>
+    <string name="password_wrong">Wrong password</string>
+    <string name="LoginSuccess">You logged in successfully</string>
+    <string name="UsernameWrong">Wrong Username. Try again</string>
+    <string name="PasswordWrong">Wrong Password. Try again</string>
+    <string name="AllWrong">Wrong Username and Password. Try again</string>
+    <string name="LoginFailed">Failed to log in. Try again</string>
+
+    <string name="verifyText">We need to verify that it is you:</string>
+    <string name="verCode">Your code</string>
+    <string name="btnVerify">Verify</string>
+    <string name="verificationSuccess">Verification accepted</string>
+    <string name="verificationFailed">Verification failed. Try again</string>
+
+    <string name="log_out">Log Out</string>
+    <string name="yes">Logout Successfully</string>
+    <string name="no">Logout Cancelled</string>
+</resources>

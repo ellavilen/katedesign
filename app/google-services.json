@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "547473510655",
+    "firebase_url": "https://kateproto123.firebaseio.com",
+    "project_id": "kateproto123",
+    "storage_bucket": "kateproto123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547473510655:android:31b04ae1f3880e5325bcca",
+        "android_client_info": {
+          "package_name": "com.example.logindesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547473510655-gftujknab130obmqsr6smldf0814v0j3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIog2MFfNAkmAwQaJctSu0X3qf2s9uj9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547473510655-gftujknab130obmqsr6smldf0814v0j3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
