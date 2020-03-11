@@ -1,10 +1,12 @@
 package com.example.logindesign
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,8 +23,8 @@ class MainActivity : AppCompatActivity() {
         val usernameEntered = etName.text.toString()
         val passwordEntered = etPassword.text.toString()
 
-        val validUsername = "myName"
-        val validPassword = "myPassword"
+        val validUsername = ""
+        val validPassword = ""
 
         if (usernameEntered == validUsername && passwordEntered == validPassword) {
             Toast.makeText(this,getString(R.string.LoginSuccess), Toast.LENGTH_LONG).show()

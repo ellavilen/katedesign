@@ -14,7 +14,13 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        btnLogOut.setOnClickListener{
+        ibCancel.setOnClickListener{
+            val intent = Intent(this, Dashboard2Activity::class.java)
+
+            // start the next activity
+            startActivity(intent)
+        }
+        ibLogOut.setOnClickListener{
             val builder = AlertDialog.Builder(this)
             builder.setTitle("You're trying to log out")
             builder.setMessage("Are you sure?")
@@ -35,6 +41,16 @@ class DashboardActivity : AppCompatActivity() {
             }
 
             builder.show()
+        }
+
+        ibValuations.setOnClickListener{
+            val intent = Intent(this, ValuationsActivity::class.java)
+            startActivity(intent)
+        }
+
+        ibSearch.setOnClickListener{
+            val intent = Intent(this, SearchcompActivity::class.java)
+            startActivity(intent)
         }
     }
 }

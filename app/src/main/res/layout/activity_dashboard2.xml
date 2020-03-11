@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Dashboard2Activity" >
+
+    <ImageButton
+        android:id="@+id/ibMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/menu"
+        android:backgroundTint="#CBFFFFFF"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibSettings"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/settings"
+        android:backgroundTint="#CBFFFFFF"
+        android:contentDescription="@string/todo"
+        android:scaleType="center"
+        android:tint="#03FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="116dp"
+        android:fontFamily="@font/sf_compact_display_reqular"
+        android:text="@string/your_route"
+        android:textColor="#FAFFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSearchComp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/sf_compact_display_bold"
+        android:text="@string/etName"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBack" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="132dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:focusable="auto"
+        android:tint="@color/colorAccent"
+        app:fabCustomSize="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/car" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="132dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:focusable="auto"
+        android:tint="@color/colorAccent"
+        app:fabCustomSize="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="134dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="220dp"
+        android:background="#F3D5D5D5"
+        android:text="Buttons for approvals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="260dp"
+        android:background="#F1F1F1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSearchComp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/sf_compact_display_reqular"
+                android:text="@string/searchComp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="318dp"
+                android:layout_height="235dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_rounded_corners"
+                android:orientation="vertical">
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/mvSearchComp"
+                    android:layout_width="319dp"
+                    android:layout_height="235dp"
+                    android:clickable="true"
+                    android:enabled="true" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlValuations"
+                android:layout_width="319dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_rounded_corners"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/tvActiveValuations"
+                    android:layout_width="168dp"
+                    android:layout_height="84dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="28dp"
+                    android:layout_toEndOf="@id/ivVal"
+                    android:fontFamily="@font/sf_compact_display_semibold"
+                    android:text="Valuations (List of addresses below)"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/ivVal"
+                    android:layout_width="41dp"
+                    android:layout_height="51dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginBottom="1dp"
+                    app:srcCompat="@drawable/valuation" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="319dp"
+                android:layout_height="139dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_rounded_corners">
+
+                <TextView
+                    android:id="@+id/tvActiveValuations"
+                    android:layout_width="199dp"
+                    android:layout_height="43dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="26dp"
+                    android:fontFamily="@font/sf_compact_display_semibold"
+                    android:text="Clients (list of client below)"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

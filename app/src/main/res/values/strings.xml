@@ -20,4 +20,21 @@
     <string name="log_out">Log Out</string>
     <string name="yes">Logout Successfully</string>
     <string name="no">Logout Cancelled</string>
+
+    <string name="todo">sdgjisdgiajkl</string>
+
+    <string name="your_route">Your route today</string>
+    <string name="searchComp">Search Comp</string>
+
+    <string name="valuations">Valuations</string>
+    <string name="back">Back</string>
+
+    <string name="activeval">Active Valuations</string>
+    <string name="history">History</string>
+    <string name="showall">Show all</string>
+    <string name="finished">Finished</string>
+    <string name="finishedText">Your finished valuations</string>
+    <string name="declined">Declined</string>
+    <string name="declinedText">Your declined valuations</string>
+    <string name="details">View details</string>
 </resources>

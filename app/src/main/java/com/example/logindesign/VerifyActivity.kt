@@ -20,7 +20,7 @@ class VerifyActivity : AppCompatActivity() {
     private fun checkVerification(){
         val codeEntered = etVerCode.text.toString()
 
-        val validCode = "12345"
+        val validCode = ""
 
         if (codeEntered == validCode) {
             Toast.makeText(this, getString(R.string.verificationSuccess), Toast.LENGTH_LONG).show()
